@@ -21,13 +21,21 @@ const sectionsItems = [
 ];
 </script>
 <template>
-  <div class="flex flex-col justify-center items-center mb-[350px] mt-[250px]">
+  <div
+    class="flex flex-col justify-center items-center mdp:mb-[350px] mb-[200px] mdp:mt-[250px] mt-[100px]"
+  >
     <img src="/icon.svg" alt="logo" />
-    <h1 class="text-white text-[40px]">NIHIL NOVI SUB LUNA [NNSL]</h1>
+    <h1
+      class="text-white mdp:text-[40px] md:text-[30px] ssm:text-[20px] text-[16px]"
+    >
+      NIHIL NOVI SUB LUNA [NNSL]
+    </h1>
   </div>
-  <div class="flex flex-row justify-evenly text-white">
+  <div
+    class="ssm:mx-[40px] mx-[20px] flex flex-col justify-center items-center text-white lg:flex-row lg:justify-evenly gap-y-[40px] lg:gap-y-[0px]"
+  >
     <div
-      class="flex flex-col justify-center items-center gap-y-[20px] max-w-[400px] bg-white bg-opacity-25 rounded-[50px] px-[20px] py-[30px]"
+      class="flex flex-col justify-center items-center gap-y-[20px] max-w-[400px] bg-white bg-opacity-25 rounded-[50px] ssm:px-[20px] px-[15px] ssm:py-[30px] py-[25px]"
       v-for="{ icon, name, description } in sectionsItems"
       id="AboutUsSection"
     >

@@ -26,7 +26,7 @@ module.exports = {
         nightSkyBG: "url('/background.jpg')",
       },
       screens: {
-        ssm: "426px",
+        ssm: "340px",
         sm: "480px",
         md: "740px",
         mdp: "1000px",

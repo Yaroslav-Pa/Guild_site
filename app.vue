@@ -25,12 +25,14 @@ const contactsItems = [
 </script>
 <template>
   <header>
-    <div class="flex flex-row mt-[20px] mx-[40px] justify-between mb-[50px]">
-      <div class="flex flex-row gap-x-[50px]">
+    <div
+      class="flex flex-row mt-[20px] mx-[20px] ssm:mx-[40px] justify-end md:justify-between mb-[50px]"
+    >
+      <div class="hidden md:flex flex-row gap-x-[50px]">
         <router-link
           v-for="{ tabName, tabTo } in menuItems"
           :to="tabTo"
-          class="text-[20px] my-[10px] text-white transition-all duration-300 group leading-[35px]"
+          class="mdp:text-[20px] text-[18px] my-[10px] text-white transition-all duration-300 group leading-[35px]"
         >
           {{ tabName }}
           <span
@@ -38,7 +40,10 @@ const contactsItems = [
           ></span>
         </router-link>
       </div>
-      <div class="text-white flex justify-centerm">
+      <div class="md:hidden">
+        <img src="" class="fixed top-0 left-0" alt="" />
+      </div>
+      <div class="text-white flex justify-centern">
         <router-link
           class="pt-[5px] px-[30px] bg-green-700 text-center transition-all duration-300 rounded-[20px] my-[10px] text-[18px] leading-[25px] border-2 border-transparent hover:bg-transparent hover:border-green-600"
           to="/personalCabinet"
@@ -55,7 +60,7 @@ const contactsItems = [
   </main>
   <footer>
     <div
-      class="flex flex-row bg-white bg-opacity-25 w-full justify-around py-[10px] mt-[100px]"
+      class="flex sm:flex-row flex-col bg-white bg-opacity-25 w-full items-center justify-around gap-y-[20px] py-[10px] md:mt-[100px] mt-[50px]"
     >
       <!-- <div class="flex flex-col gap-y-[10px]">
         <h1 class="text-[24px] text-white transition-all duration-300">
@@ -75,7 +80,9 @@ const contactsItems = [
         <h1 class="text-[24px] text-white transition-all duration-300">
           Contacts
         </h1>
-        <div class="gap-x-[30px] flex flex-row">
+        <div
+          class="gap-x-[30px] gap-y-[5px] flex flex-col lg:flex-row items-center items-start"
+        >
           <a
             v-for="{ contactsName, linkContact, iconContact } in contactsItems"
             :href="linkContact"
@@ -87,7 +94,7 @@ const contactsItems = [
         </div>
       </div>
       <div class="flex flex-col gap-y-[10px]">
-        <div class="flex flex-row justify-between text-white">
+        <div class="flex flex-col lg:flex-row justify-between text-white">
           <router-link
             class="pt-[2px] px-[20px] bg-green-700 text-center transition-all duration-300 rounded-[20px] my-[10px] text-[18px] leading-[25px] border-transparent hover:bg-green-400 hover:text-black"
             to="/personalCabinet"
