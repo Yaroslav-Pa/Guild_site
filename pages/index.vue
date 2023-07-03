@@ -26,22 +26,24 @@ const sectionsItems = [
   >
     <img src="/icon.svg" alt="logo" />
     <h1
-      class="text-white mdp:text-[40px] md:text-[30px] ssm:text-[20px] text-[16px]"
+      class="text-white mdp:text-[40px] md:text-[30px] ssm:text-[20px] text-[16px] text-center"
     >
       NIHIL NOVI SUB LUNA [NNSL]
     </h1>
   </div>
   <div
-    class="ssm:mx-[40px] mx-[20px] flex flex-col justify-center items-center text-white lg:flex-row lg:justify-evenly gap-y-[40px] lg:gap-y-[0px]"
+    class="ssm:mx-[40px] mx-[50px] flex flex-col justify-center items-center text-white lg:flex-row lg:justify-evenly gap-y-[40px] lg:gap-y-[0px]"
   >
     <div
-      class="flex flex-col justify-center items-center gap-y-[20px] max-w-[400px] bg-white bg-opacity-25 rounded-[50px] ssm:px-[20px] px-[15px] ssm:py-[30px] py-[25px]"
+      class="flex flex-col justify-center items-center gap-y-[10px] sm:gap-y-[20px] max-w-[400px] bg-white bg-opacity-25 rounded-[50px] ssm:px-[20px] px-[15px] py-[30px]"
       v-for="{ icon, name, description } in sectionsItems"
       id="AboutUsSection"
     >
-      <img :src="icon" :alt="name" class="h-[150px]" />
-      <h1 class="text-[30px]">{{ name }}</h1>
-      <h2>{{ description }}</h2>
+      <img :src="icon" :alt="name" class="sm:h-[150px] h-[100px]" />
+      <h1 class="sm:text-[30px] text-[20px]">{{ name }}</h1>
+      <h2 class="ssm:text-[14px] text-[12px] md:text-[20px]">
+        {{ description }}
+      </h2>
     </div>
   </div>
 </template>

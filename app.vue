@@ -26,7 +26,7 @@ const contactsItems = [
 <template>
   <header>
     <div
-      class="flex flex-row mt-[20px] mx-[20px] ssm:mx-[40px] justify-end md:justify-between mb-[50px]"
+      class="flex flex-row mt-[5px] sm:mt-[20px] mx-[20px] ssm:mx-[40px] justify-end md:justify-between mb-[50px]"
     >
       <div class="hidden md:flex flex-row gap-x-[50px]">
         <router-link
@@ -41,11 +41,15 @@ const contactsItems = [
         </router-link>
       </div>
       <div class="md:hidden">
-        <img src="" class="fixed top-0 left-0" alt="" />
+        <img
+          src="/smallMenu.png"
+          class="fixed top-3 left-3 h-[35px] sm:h-[40px]"
+          alt=""
+        />
       </div>
       <div class="text-white flex justify-centern">
         <router-link
-          class="pt-[5px] px-[30px] bg-green-700 text-center transition-all duration-300 rounded-[20px] my-[10px] text-[18px] leading-[25px] border-2 border-transparent hover:bg-transparent hover:border-green-600"
+          class="sm:pt-[5px] pt-[3px] px-[20px] sm:px-[30px] bg-green-700 text-center transition-all duration-300 rounded-[20px] my-[10px] text-[14px] sm:text-[18px] leading-[25px] border-2 border-transparent hover:bg-transparent hover:border-green-600"
           to="/personalCabinet"
         >
           Login
@@ -86,9 +90,9 @@ const contactsItems = [
           <a
             v-for="{ contactsName, linkContact, iconContact } in contactsItems"
             :href="linkContact"
-            class="text-[16px] text-white transition-all duration-300 hover:text-green-400 flex flex-row gap-x-[10px]"
+            class="text-[16px] text-white transition-all duration-300 hover:text-green-400 flex flex-row w-full justify-between gap-x-[10px]"
           >
-            {{ contactsName }}
+            <div>{{ contactsName }}</div>
             <font-awesome-icon :icon="iconContact" class="text-[24px]" />
           </a>
         </div>
