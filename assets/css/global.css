@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Adamina Regular";
+  src: local("Adamina Regular"),
+    url(./assets/font/Adamina-Regular.woff) format("woff");
+  font-weight: normal;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Cronos Pro Display";
+  src: local("Cronos Pro Display"),
+    url(./assets/font/Cronos-Pro-Display.woff) format("woff");
+  font-weight: normal;
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: "Guru";
+  src: local("Guru"), url(./assets/font/Guru.woff) format("woff");
+  font-weight: normal;
+}
+
+body {
+  font-family: "Adamina Regular";
+}
+
+h4 {
+  font-family: "Cronos Pro Display";
+}
+
+h5 {
+  font-family: "Guru";
+}
