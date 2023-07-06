@@ -29,7 +29,7 @@ const contactsItems = [
       class="flex flex-row mt-[5px] sm:mt-[20px] mx-[20px] ssm:mx-[40px] justify-end md:justify-between mb-[50px]"
     >
       <div class="hidden md:flex flex-row gap-x-[50px]">
-        <router-link
+        <NuxtLink
           v-for="{ tabName, tabTo } in menuItems"
           :to="tabTo"
           class="mdp:text-[20px] text-[18px] my-[10px] text-white transition-all duration-300 group leading-[35px]"
@@ -38,7 +38,7 @@ const contactsItems = [
           <span
             class="block max-w-0 group-hover:max-w-full transition-all duration-300 h-[1.5px] bg-gradient-to-r from-green-300 via-blue-500 to-purple-700"
           ></span>
-        </router-link>
+        </NuxtLink>
       </div>
       <div class="md:hidden">
         <img
@@ -48,12 +48,12 @@ const contactsItems = [
         />
       </div>
       <div class="text-white flex justify-centern">
-        <router-link
+        <NuxtLink
           class="sm:pt-[5px] pt-[3px] px-[20px] sm:px-[30px] bg-green-700 text-center transition-all duration-300 rounded-[20px] my-[10px] text-[14px] sm:text-[18px] leading-[25px] border-2 border-transparent hover:bg-transparent hover:border-green-600"
           to="/personalCabinet"
         >
           Login
-        </router-link>
+        </NuxtLink>
       </div>
     </div>
   </header>
@@ -83,18 +83,18 @@ const contactsItems = [
       </div>
       <div class="flex flex-col gap-y-[10px]">
         <div class="flex flex-col lg:flex-row justify-between text-white">
-          <router-link
+          <NuxtLink
             class="pt-[2px] px-[20px] bg-green-700 text-center transition-all duration-300 rounded-[20px] my-[10px] text-[18px] leading-[25px] border-transparent hover:bg-green-400 hover:text-black"
             to="/personalCabinet"
           >
             Apply
-          </router-link>
-          <router-link
+          </NuxtLink>
+          <NuxtLink
             class="pt-[2px] px-[20px] bg-green-700 text-center transition-all duration-300 rounded-[20px] my-[10px] text-[18px] leading-[25px] border-transparent hover:bg-green-400 hover:text-black"
             to="/personalCabinet"
           >
             Login
-          </router-link>
+          </NuxtLink>
         </div>
         <div class="gap-x-[10px] flex flex-row">
           <h1
@@ -113,3 +113,8 @@ const contactsItems = [
     </div>
   </footer>
 </template>
+<style>
+/* .router-link-active {
+  background-color: aqua;
+} */
+</style>
