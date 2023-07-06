@@ -57,29 +57,13 @@ const contactsItems = [
       </div>
     </div>
   </header>
-  <main>
-    <div>
-      <NuxtPage />
-    </div>
-  </main>
+  <div>
+    <slot />
+  </div>
   <footer>
     <div
       class="flex sm:flex-row flex-col bg-white bg-opacity-25 w-full items-center justify-around gap-y-[20px] py-[10px] md:mt-[100px] mt-[50px]"
     >
-      <!-- <div class="flex flex-col gap-y-[10px]">
-        <h1 class="text-[24px] text-white transition-all duration-300">
-          Pages
-        </h1>
-        <div class="gap-y-[5px] flex flex-col">
-          <router-link
-            v-for="{ tabName, tabTo } in menuItems"
-            :to="tabTo"
-            class="text-[16px] text-white transition-all duration-300 hover:text-green-400"
-          >
-            {{ tabName }}
-          </router-link>
-        </div>
-      </div> -->
       <div class="flex flex-col gap-y-[10px]">
         <h1 class="text-[24px] text-white transition-all duration-300">
           Contacts
