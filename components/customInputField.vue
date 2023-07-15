@@ -1,5 +1,5 @@
 <script setup>
-defineProps(["title", "iconName", "type"]);
+  defineProps(["title", "iconName", "type"]);
 </script>
 <template>
   <div class="flex flex-col gap-y-[10px]">
