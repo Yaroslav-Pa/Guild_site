@@ -1,6 +1,9 @@
 <script setup>
-import inputField from "@/components/customInputField.vue";
-import inputCheckBox from "@/components/customCheckBox.vue";
+  // We need to fix this auto-import issue asap!
+  // the problem seems to lie the rendering part
+  // since the nuxt debug panel detects the components
+  import InputField from "@/components/CustomInputField.vue";
+  import InputCheckBox from "@/components/CustomCheckBox.vue";
 </script>
 <template>
   <div class="flex flex-row justify-center items-center gap-x-[50px]">
@@ -39,26 +42,27 @@ import inputCheckBox from "@/components/customCheckBox.vue";
       <div class="flex flex-col justify-center items-center gap-y-[45px]">
         <h1 class="text-[24px]">Membership application form</h1>
         <div class="flex flex-col gap-y-[20px]">
-          <inputField
-            title="Input name"
-            iconName="fa-solid fa-user"
-            type="text"
-          ></inputField>
-          <inputField
-            title="Input password"
-            iconName="fa-solid fa-lock"
-            type="password"
-          ></inputField>
+          <InputField
+            :title="'Input name'"
+            :iconName="'fa-solid fa-user'"
+            :type="'text'"
+          />
+          <InputField
+            :title="'Input name'"
+            :iconName="'fa-solid fa-user'"
+            :type="'text'"
+          />
         </div>
         <div class="flex flex-col gap-y-[10px]">
-          <inputCheckBox text="Lorem, ipsum dolor."></inputCheckBox>
-          <inputCheckBox text="Lorem, ipsum dolor."></inputCheckBox>
-          <inputCheckBox text="Lorem, ipsum dolor."></inputCheckBox>
-          <inputCheckBox text="Lorem, ipsum dolor."></inputCheckBox>
+          <InputCheckBox :text="'Lorem, ipsum dolor.'" />
+          <InputCheckBox :text="'Lorem, ipsum dolor.'" />
+          <InputCheckBox :text="'Lorem, ipsum dolor.'" />
+          <InputCheckBox :text="'Lorem, ipsum dolor.'" />
         </div>
 
         <div>
-          <!-- need re-do this butoon to componet but maybe not?  -->
+          <!-- Ya: need re-do this butoon to componet but maybe not?
+               Yo: I see no need yet. We're not reusing this kind of submit button anywhere -->
           <button
             type="submit"
             class="group relative h-full w-full py-[5px] px-[30px] overflow-hidden rounded-lg bg-black dark:bg-white shadow"
