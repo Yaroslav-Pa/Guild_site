@@ -1,5 +1,5 @@
 <script setup>
-defineProps(["text"]);
+  defineProps(["text"]);
 </script>
 <template>
   <div class="flex gap-[10px] items-center justify-center">
