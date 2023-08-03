@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
+    "./components/*.{js,vue,ts}",
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
@@ -41,12 +42,5 @@ module.exports = {
     },
   },
   plugins: [],
-  // safelist: [
-  //   "left-[15px]",
-  //   "left-[35px]",
-  //   {
-  //     pattern: /bg-(custom|goods)/,
-  //     variants: ["hover"],
-  //   },
-  // ],
+  safelist: [],
 };

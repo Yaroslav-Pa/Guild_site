@@ -3,7 +3,6 @@ const menuItems = [
   { tabName: "About us", tabTo: "/#AboutUsSection" },
   { tabName: "Apply", tabTo: "/apply" },
   { tabName: "Guild cabinet", tabTo: "/" },
-  { tabName: "Personal cabinet", tabTo: "/" },
 ];
 const contactsItems = [
   {
@@ -52,7 +51,7 @@ const contactsItems = [
           class="sm:pt-[5px] pt-[3px] px-[20px] sm:px-[30px] bg-green-700 text-center transition-all duration-300 rounded-[20px] my-[10px] text-[14px] sm:text-[18px] leading-[25px] border-2 border-transparent hover:bg-transparent hover:border-green-600"
           to="/personalCabinet"
         >
-          Login
+          Personal cabinet
         </NuxtLink>
       </div>
     </div>
@@ -82,19 +81,44 @@ const contactsItems = [
         </div>
       </div>
       <div class="flex flex-col gap-y-[10px]">
-        <div class="flex flex-col lg:flex-row justify-between text-white">
+        <div
+          class="flex flex-col lg:flex-row justify-between text-white gap-x-[10px] items-center"
+        >
           <NuxtLink
+            to="/apply"
+            class="group relative h-full py-[2px] px-[20px] overflow-hidden rounded-lg bg-black dark:bg-white shadow"
+          >
+            <div
+              class="absolute inset-0 w-0 bg-green-600 transition-all duration-[250ms] ease-out group-hover:w-full"
+            ></div>
+            <span class="relative text-black text-[16px] group-hover:text-white"
+              >Apply</span
+            >
+          </NuxtLink>
+          <NuxtLink
+            to="/personalCabinet"
+            class="group relative h-full py-[2px] px-[20px] overflow-hidden rounded-lg bg-black dark:bg-white shadow"
+          >
+            <div
+              class="absolute inset-0 w-0 bg-green-600 transition-all duration-[250ms] ease-out group-hover:w-full"
+            ></div>
+            <span
+              class="relative text-black text-[16px] group-hover:text-white whitespace-nowrap"
+              >Personal cabinet</span
+            >
+          </NuxtLink>
+          <!-- <NuxtLink
             class="pt-[2px] px-[20px] bg-green-700 text-center transition-all duration-300 rounded-[20px] my-[10px] text-[18px] leading-[25px] border-transparent hover:bg-green-400 hover:text-black"
             to="/personalCabinet"
           >
             Apply
-          </NuxtLink>
-          <NuxtLink
+          </NuxtLink> -->
+          <!-- <NuxtLink
             class="pt-[2px] px-[20px] bg-green-700 text-center transition-all duration-300 rounded-[20px] my-[10px] text-[18px] leading-[25px] border-transparent hover:bg-green-400 hover:text-black"
             to="/personalCabinet"
           >
             Login
-          </NuxtLink>
+          </NuxtLink> -->
         </div>
         <div class="gap-x-[10px] flex flex-row">
           <h1

@@ -1,6 +1,7 @@
 <script setup>
 import inputField from "@/components/customInputField.vue";
 import inputCheckBox from "@/components/customCheckBox.vue";
+import buttonV2 from "@/components/button-v2.vue";
 </script>
 <template>
   <div class="flex flex-row justify-center items-center gap-x-[50px]">
@@ -66,7 +67,7 @@ import inputCheckBox from "@/components/customCheckBox.vue";
             <div
               class="absolute inset-0 w-0 bg-green-600 transition-all duration-[250ms] ease-out group-hover:w-full"
             ></div>
-            <span class="relative text-[18px] text-black group-hover:text-white"
+            <span class="relative text-black text-[18px] group-hover:text-white"
               >Apply!</span
             >
           </button>

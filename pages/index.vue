@@ -35,7 +35,7 @@ const sectionsItems = [
     class="ssm:mx-[40px] mx-[50px] flex flex-col justify-center items-center text-white lg:flex-row lg:justify-evenly gap-y-[40px] lg:gap-y-[0px]"
   >
     <div
-      class="flex flex-col justify-center items-center gap-y-[10px] sm:gap-y-[20px] max-w-[400px] bg-white bg-opacity-25 rounded-[50px] ssm:px-[20px] px-[15px] py-[30px]"
+      class="flex flex-col justify-center items-center gap-y-[10px] sm:gap-y-[20px] max-w-[400px] border-2 border-gray-500 p-[40px] bg-black bg-opacity-50 rounded-[25px] text-white ssm:px-[20px] px-[15px] py-[30px]"
       v-for="{ icon, name, description } in sectionsItems"
       id="AboutUsSection"
     >
