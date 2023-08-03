@@ -1,7 +1,4 @@
 <script setup>
-// We need to fix this auto-import issue asap!
-// the problem seems to lie the rendering part
-// since the nuxt debug panel detects the components
 import InputField from "@/components/CustomInputField.vue";
 import InputCheckBox from "@/components/CustomCheckBox.vue";
 import TextCard from "@/components/TextCard.vue";

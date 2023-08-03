@@ -14,7 +14,7 @@ const sectionsItems = [
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque adipisci dolorem dolore est tenetur iusto incidunt sint esse ad dolores recusandae ab minima fugit cum dignissimos, officia quod quaerat ex officiis. Asperiores dolore quibusdam incidunt dolor omnis fuga repellendus itaque quia minus praesentium iure suscipit ipsam enim, fugiat veritatis magnam?",
   },
   {
-    icon: "",
+    icon: "/aboutUs.jpg",
     name: "About us",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque adipisci dolorem dolore est tenetur iusto incidunt sint esse ad dolores recusandae ab minima fugit cum dignissimos, officia quod quaerat ex officiis. Asperiores dolore quibusdam incidunt dolor omnis fuga repellendus itaque quia minus praesentium iure suscipit ipsam enim, fugiat veritatis magnam?",
